@@ -347,7 +347,7 @@ var withObservablesSynchronized = function withObservablesSynchronized(triggerPr
           var _this$state = this.state,
               isFetching = _this$state.isFetching,
               values = _this$state.values;
-          return isFetching ? null : createElement(BaseComponent, _objectSpread({}, this.props, values));
+          return createElement(BaseComponent, _objectSpread({}, this.props, values, isFetching));
         }
       }]);
 

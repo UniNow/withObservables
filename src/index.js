@@ -205,7 +205,7 @@ const withObservablesSynchronized = <PropsInput: {}, ObservableProps: {}>(
 
       render(): * {
         const { isFetching, values } = this.state
-        return isFetching ? null : createElement(BaseComponent, { ...this.props, ...values })
+        return createElement(BaseComponent, { ...this.props, ...values, isFetching })
       }
     }
 
